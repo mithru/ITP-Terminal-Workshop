@@ -231,6 +231,34 @@ terminate
 ctrl + c
 ```
 
+## Version check
+```shell
+Git
+$ git --version
+git version 2.14.1
+
+Nodejs
+$ node -v
+v6.11.4
+
+Ruby
+$ ruby -v
+ruby 2.0.0p648 (2015-12-16 revision 53162) [universal.x86_64-darwin16]
+
+PHP
+$ php -v
+PHP 5.6.30 (cli) (built: Feb  7 2017 16:18:37)
+Copyright (c) 1997-2016 The PHP Group
+Zend Engine v2.6.0, Copyright (c) 1998-2016 Zend Technologies
+
+Mac OS
+$ sw_vers
+ProductName:	Mac OS X
+ProductVersion:	10.12.6
+BuildVersion:	16G29
+
+```
+
 ## Homebrew
 The missing package manager for macOS which means you can install software via Terminal.
 ```shell
