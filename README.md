@@ -270,6 +270,7 @@ BuildVersion:	16G29
 
 ## Homebrew
 The missing package manager for macOS which means you can install software via Terminal.
+If you want to try ML or OpenCV, this will be helpful.
 ```shell
 Install 
 $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
