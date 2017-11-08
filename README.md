@@ -167,6 +167,7 @@ DESCRIPTION
 scroll down   [Enter]  
 close manual  q  
 
+# Editor 
 
 ## atom
 If you install atom, "atom" command will be useful
@@ -197,6 +198,14 @@ $ subl file_name
 
 ```  
 
+## Visual Studio Code
+You need to install command line plugin(https://code.visualstudio.com/docs/setup/mac)
+```shell
+$ code .
+
+$ code file_name
+```
+
 ## Homebrew
 The missing package manager for macOS which means you can install software via Terminal.
 ```shell
@@ -207,7 +216,8 @@ $ brew install wget
 
 ```
 
-#### Option Homebrew-Cask
+## Option 
+### Homebrew-Cask
 https://caskroom.github.io/  
 You can install macOS applications via Terminal like Chrome
 ```shell
@@ -217,4 +227,9 @@ $ brew install brew-cask
 Install Google Chrome
 $ brew cask search chrome
 $ brew cask install google-chrome
+```
+
+### Reload Terminal's settings
+```shell
+$ ~/.bash_profile
 ```
