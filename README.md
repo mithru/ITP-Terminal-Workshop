@@ -1,1 +1,220 @@
 # ITP Terminal Workshop
+
+## Basic Commands
+### pwd
+present working directory(where i am)
+```shell
+$ pwd
+
+/Users/[UserName]
+```  
+
+### ls
+list
+```shell
+$ ls
+
+Applications	Desktop		Dropbox		Music		VirtualBox VMs
+BouncingBallApp	Documents	Library		Pictures	node_modules
+CinderProject	Downloads	Movies		Public		tmp
+```
+
+### cd
+change directory
+```shell
+$ cd Documents
+$ pwd
+
+/Users/[UserName]/Documents
+
+move up one directory
+$ cd ..
+
+```
+
+### mkdir
+make a new directory
+```shell
+$ ls
+
+C++			javascript_basic	python
+cinder_class		js_mvp			sass-sandbox
+drive.txt		mobile_app		spa
+github			openscad		upload
+hue-control		openscad.md
+
+$ mkdir ITP_CAMP_TEST
+$ ls
+
+C++			hue-control		openscad.md
+ITP_CAMP_TEST(new)		javascript_basic	python
+cinder_class		js_mvp			sass-sandbox
+drive.txt		mobile_app		spa
+github			openscad		upload
+```  
+
+### touch
+make a new empty file
+```shell
+$ ls
+C++			javascript_basic	python
+cinder_class		js_mvp			sass-sandbox
+drive.txt		mobile_app		spa
+github			openscad		upload
+hue-control		openscad.md
+
+$ touch index.html
+
+$ ls
+C++			index.html(new)		openscad.md
+cinder_class		javascript_basic	python
+drive.txt		js_mvp			sass-sandbox
+github			mobile_app		spa
+hue-control		openscad		upload
+```
+
+### cat
+display file content
+```shell
+$ cat file_name
+If you want to see a huge file
+$ cat file_name | less
+```
+
+### open
+open current directory with finder
+```shell
+$ open .
+
+$ open file_name
+If you select index.html, Terminal opens your default browser
+
+```
+
+### mv
+move a file/folder or rename
+```shell
+$ mv original_file_name new_file_name
+$ mv original_folder_name new_folder_name
+```
+
+### cp
+copy a file/folder
+```shell
+$ cp original_file_name copy_file_name
+$ cp -r original_folder_name copy_folder_name
+```
+
+### rm
+remove a file/folder
+```shell
+$ rm filename
+$ rm -r foldername
+```
+
+### history
+display commands you hit
+```shell
+$ history
+10864  node index.js
+10865  clear
+10866  npm install --save body-parser
+10867  node index.js
+10868  nodemon index.js
+10869  ls
+10870  clear
+
+
+$ !10870
+
+```
+
+### clear
+clear display
+```shell
+$ clear
+```
+
+### man
+read commands manual to check options
+```shell
+$ man [command name]
+$ man ls
+
+NAME
+     ls -- list directory contents
+
+SYNOPSIS
+     ls [-ABCFGHLOPRSTUW@abcdefghiklmnopqrstuwx1] [file ...]
+
+DESCRIPTION
+     For each operand that names a file of a type other than directory, ls
+     displays its name as well as any requested, associated information.  For
+     each operand that names a file of type directory, ls displays the names
+     of files contained within that directory, as well as any requested, asso-
+     ciated information.
+
+     If no operands are given, the contents of the current directory are dis-
+     played.  If more than one operand is given, non-directory operands are
+     displayed first; directory and non-directory operands are sorted sepa-
+     rately and in lexicographical order.
+
+     The following options are available:
+
+     -@      Display extended attribute keys and sizes in long (-l) output.
+```  
+
+scroll down   [Enter]  
+close manual  q  
+
+
+## atom
+If you install atom, "atom" command will be useful
+```shell
+$ atom filename
+
+$ atom .
+```
+"atom ." can open files that are in the current directory
+
+
+### option start sublime text by terminal
+```shell
+$ sudo ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/bin/subl
+you need to change Sublime Text.app -> Sublime Text 2.app or Sublime Text 3.app
+
+If you get the message "Operation not permitted", try the following command
+$ sudo ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/subl
+
+open sublime text
+$ subl
+
+open folder by sublime text
+$ subl .
+
+open a file by sublime text
+$ subl file_name
+
+```  
+
+## Homebrew
+The missing package manager for macOS which means you can install software via Terminal.
+```shell
+Install 
+$ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+$ brew install wget
+
+```
+
+#### Option Homebrew-Cask
+https://caskroom.github.io/  
+You can install macOS applications via Terminal like Chrome
+```shell
+$ brew tap phinze/homebrew-cask
+$ brew install brew-cask
+
+Install Google Chrome
+$ brew cask search chrome
+$ brew cask install google-chrome
+```
