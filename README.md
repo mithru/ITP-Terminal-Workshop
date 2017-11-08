@@ -227,6 +227,11 @@ $ python3 -m http.server
 If you want use another port
 $ python3 -m http.server 5000
 
+If you prefer to use nodejs instead of python, you can install a npm package
+https://www.npmjs.com/package/http-server
+https://www.npmjs.com/package/simple-server
+https://www.npmjs.com/package/simple-http-server
+
 terminate
 ctrl + c
 ```
@@ -240,6 +245,10 @@ git version 2.14.1
 Nodejs
 $ node -v
 v6.11.4
+
+npm
+$ npm -v
+3.10.10
 
 Ruby
 $ ruby -v
