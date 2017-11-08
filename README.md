@@ -135,6 +135,14 @@ clear display
 $ clear
 ```
 
+### ifconfig
+ifconfig is a system administration utility
+```shell
+$ ifconfig interface_name
+$ ifconfig -a
+$ ifconfig en0
+```
+
 ### man
 read commands manual to check options
 ```shell
@@ -167,9 +175,9 @@ DESCRIPTION
 scroll down   [Enter]  
 close manual  q  
 
-# Editor 
+## Editor 
 
-## atom
+### atom
 If you install atom, "atom" command will be useful
 ```shell
 $ atom filename
@@ -179,7 +187,7 @@ $ atom .
 "atom ." can open files that are in the current directory
 
 
-### option start sublime text by terminal
+### Sublime
 ```shell
 $ sudo ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/bin/subl
 you need to change Sublime Text.app -> Sublime Text 2.app or Sublime Text 3.app
@@ -198,12 +206,29 @@ $ subl file_name
 
 ```  
 
-## Visual Studio Code
+### Visual Studio Code
 You need to install command line plugin(https://code.visualstudio.com/docs/setup/mac)
 ```shell
 $ code .
 
 $ code file_name
+```
+
+## Python localserver
+```shell
+Check your python version
+$ python --version
+
+python2 default port is 8000
+$ python -m SimpleHTTPServer
+
+python3
+$ python3 -m http.server
+If you want use another port
+$ python3 -m http.server 5000
+
+terminate
+ctrl + c
 ```
 
 ## Homebrew
@@ -233,3 +258,19 @@ $ brew cask install google-chrome
 ```shell
 $ ~/.bash_profile
 ```
+
+## After Workshop
+
+[command-line tutorial]  
+https://www.learnenough.com/command-line-tutorial  
+
+[basic commands]  
+http://mally.stanford.edu/~sr/computing/basic-unix.html  
+
+codecademy's command-line is good for begineers.  
+https://www.codecademy.com/en/courses/learn-the-command-line/lessons/navigation/exercises/your-first-command  
+
+[commands list]
+my markdown is including how to install homebrew and nvm(node version manager)  
+https://github.com/hackyGQ/ITP-Camp2015/tree/master/dev_env  
+
