@@ -9,6 +9,29 @@ $ pwd
 /Users/[UserName]
 ```  
 
+### clear
+clear display
+```shell
+$ clear
+```
+
+### history
+display commands you hit
+```shell
+$ history
+10864  node index.js
+10865  clear
+10866  npm install --save body-parser
+10867  node index.js
+10868  nodemon index.js
+10869  ls
+10870  clear
+
+
+$ !10870
+
+``` 
+
 ### ls
 list
 ```shell
@@ -120,28 +143,6 @@ $ rm filename
 $ rm -r foldername
 ```
 
-### history
-display commands you hit
-```shell
-$ history
-10864  node index.js
-10865  clear
-10866  npm install --save body-parser
-10867  node index.js
-10868  nodemon index.js
-10869  ls
-10870  clear
-
-
-$ !10870
-
-```
-
-### clear
-clear display
-```shell
-$ clear
-```
 
 ### ifconfig
 ifconfig is a system administration utility
