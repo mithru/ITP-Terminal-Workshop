@@ -99,6 +99,16 @@ text editor
 $ nano file_name
 ```
 
+### open
+open current directory with finder
+```shell
+$ open .
+
+$ open file_name
+If you select index.html, Terminal opens your default browser
+
+```  
+
 ### mkdir
 make a new directory
 ```shell
@@ -119,16 +129,6 @@ cinder_class		js_mvp			sass-sandbox
 drive.txt		mobile_app		spa
 github			openscad		upload
 ```  
-
-### open
-open current directory with finder
-```shell
-$ open .
-
-$ open file_name
-If you select index.html, Terminal opens your default browser
-
-```
 
 ### mv
 move a file/folder or rename
