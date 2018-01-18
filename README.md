@@ -27,10 +27,15 @@ $ pwd
 
 /Users/[UserName]/Documents
 
+```
+
 move up one directory
+```
 $ cd ..
 
+```
 move to previous directory
+```
 $ cd -
 
 ```
