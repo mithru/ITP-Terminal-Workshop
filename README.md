@@ -151,15 +151,6 @@ $ rm filename
 $ rm -r foldername
 ```
 
-
-### ifconfig
-ifconfig is a system administration utility
-```shell
-$ ifconfig interface_name
-$ ifconfig -a
-$ ifconfig en0
-```
-
 ### man
 read commands manual to check options
 ```shell
@@ -191,6 +182,15 @@ DESCRIPTION
 
 scroll down   [Enter]  
 close manual  q  
+
+
+### ifconfig
+ifconfig is a system administration utility
+```shell
+$ ifconfig interface_name
+$ ifconfig -a
+$ ifconfig en0
+```
 
 ## Editor 
 
