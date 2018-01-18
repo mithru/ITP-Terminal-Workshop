@@ -63,27 +63,6 @@ $ cd -
 
 ```
 
-### mkdir
-make a new directory
-```shell
-$ ls
-
-C++			javascript_basic	python
-cinder_class		js_mvp			sass-sandbox
-drive.txt		mobile_app		spa
-github			openscad		upload
-hue-control		openscad.md
-
-$ mkdir ITP_CAMP_TEST
-$ ls
-
-C++			hue-control		openscad.md
-ITP_CAMP_TEST(new)		javascript_basic	python
-cinder_class		js_mvp			sass-sandbox
-drive.txt		mobile_app		spa
-github			openscad		upload
-```  
-
 ### touch
 make a new empty file
 ```shell
@@ -108,9 +87,38 @@ hue-control		openscad		upload
 display file content
 ```shell
 $ cat file_name
+```
 If you want to see a huge file
+```
 $ cat file_name | less
 ```
+
+### nano
+text editor
+```shell
+$ nano file_name
+```
+
+### mkdir
+make a new directory
+```shell
+$ ls
+
+C++			javascript_basic	python
+cinder_class		js_mvp			sass-sandbox
+drive.txt		mobile_app		spa
+github			openscad		upload
+hue-control		openscad.md
+
+$ mkdir ITP_CAMP_TEST
+$ ls
+
+C++			hue-control		openscad.md
+ITP_CAMP_TEST(new)		javascript_basic	python
+cinder_class		js_mvp			sass-sandbox
+drive.txt		mobile_app		spa
+github			openscad		upload
+```  
 
 ### open
 open current directory with finder
